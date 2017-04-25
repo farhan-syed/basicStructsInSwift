@@ -43,6 +43,16 @@ print("user3 username: \(user3.username)")
 
 // Notice when printed the original, user2 is unchanged as a value type.
 
+// If you don't understand my example, here's Apples.
+
+// Value type example
+struct S { var data: Int = -1 }
+var a = S()
+var b = a	 // a is copied to b
+a.data = 42	// Changes a, not b
+print("\(a.data), \(b.data)")	// prints "42, -1"
+
+// Functions
 
 // You can even add functions inside structs
 
